@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andale Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space Mono">
+    <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
+    <link href="flex.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba6d6c516a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="animate.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* overflow: hidden; */
+        }
+
+        .area-navbar {
+            background-color: #EAE6D7;
+            width: 100vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: fixed; */
+         
+            border-bottom: 2px dotted #2B2B2A;
+        }
+
+        .area-brand-navbar {
+            width: 40vw;
+            height: 10vh;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        .area-brand-navbar h1 {
+            font-size: 60px;
+            margin-left: 80px;
+        }
+
+        .area-brand-navbar p {
+            font-size: 50px;
+            color: #72343A;
+            font-family: Lora;
+        }
+
+        .area-item-navbar {
+            width: 60vw;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul {
+            list-style-type: none;
+            /* titiknya hilang */
+        }
+
+        li {
+            display: inline;
+            margin: 20px;
+            font-size: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #2B2B2A;
+            font-weight: 100;
+            font-family: Andale Mono;
+        }
+
+
+
+        /* batas  */
+        .hero {
+            height: 100vh;
+            width: 100vw;
+            background-color: #EAE6D7;
+            display: flex;
+        }
+
+        .area-text {
+            width: 43vw;
+            height: 74vh;
+            /* background-color: #ddc56f; */
+            padding: 100px;
+            margin-left: -40px;
+        }
+
+        .area-text p {
+            color: #2B2B2A;
+        }
+
+        .persen-text {
+            font-size: 200px;
+            font-family: lora;
+            color: #72343A;
+        }
+
+        .programer-text {
+            font-size: 110px;
+            margin-top: -20px;
+        }
+
+        .jurusan-text {
+            font-size: 30px;
+            letter-spacing: 20.6px;
+            font-weight: 100px;
+            font-family: andale mono;
+        }
+
+        /* area imageeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee4 */
+        .area-image {
+            width: 46vw;
+            height: 100vh;
+            display: flex;
+            display: grid;
+        }
+
+        .img1-home {
+            height: 70vh;
+            width: 46vw;
+            /* background-color: #EAE6D7; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img2-home {
+            height: 30vh;
+            width: 46vw;
+            /* background-color: #FF7186; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .img1-home img {
+            margin-top: 100px;
+            margin-left: -220px;
+        }
+
+        .name-title {
+            width: 250px;
+            height: 75px;
+            background-color: #2B2B2A;
+            border-radius: 50px;
+            margin: 13px;
+            margin-top: 1px;
+            margin-left: -140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            letter-spacing: 7px;
+            color: #EAE6D7;
+            font-family: andale mono;
+        }
+
+        .sosmed1 {
+            width: 65px;
+            height: 65px;
+            background-color: #2B2B2A;
+            border: 5px solid #AFAFA3;
+            margin: 13px;
+            margin-top: 1px;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+        }
+        /* ------------------PAGE 2------------------------------ */
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #EAE6D7;
+            display: flex;
+
+        }
+        /* home ------------------- */
+        .area-maps-home{
+            width: 35vw;
+            /* height: 100vh;background-color: #3f23b1; */
+            justify-content: end;
+            align-items: center;
+            display: flex;
+        }
+        .box-map-home{
+            width: 292px;
+            height: 596px;
+            background-color: #2B2B2A;
+            margin-top: 30px ;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* position: absolute; */
+        }
+        .box-map-home iframe{
+            width: 272px;
+            height: 576px;
+            
+        }
+        .Home-legend{
+            width: 35px;
+            height: 140px;
+            background-color: #EC4635;
+            position: absolute;
+            right: 66.7%;
+            border-radius: 30px;
+            justify-content: center;
+            align-items: center;
+            display:grid;
+            text-align: center;
+        }
+        .Home-legend p{
+            font-size: 20px;
+            font-family: andale mono;
+            color: #2B2B2A;
+        }
+
+
+
+        /* profileellllllll */
+        .area-profile{
+            width: 30vw;
+            height: 100vh;
+            /* background-color: #ce3d4e; */
+            display:grid;
+            /* margin: 40px; */
+            margin-right: 40px;
+            margin-left: 40px;
+
+        }
+        .img-profile{
+            width: 30vw;
+            height: 50vh;
+            /* background-color: rgba(211, 163, 103, 0.622); */
+            display: flex;
+            justify-content:center;
+            
+            
+        }
+        .border-pfp{
+            width: 332.15px;
+            height: 334px;
+            background: #2B2B2A;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border-radius: 400px 400px 0px 0px;
+            margin-top: 60px;
+
+        } 
+        .img-profile img{
+            width: 312.15px;
+            height: 314px;
+        }
+        .text-profile{
+            width: 30vw;
+            height: 50vh;
+            /* background-color:#ad953d ; */
+            justify-content: center;
+            text-align: center;
+        }
+        .text-profile h1{
+            font-size: 40px;
+            font-family: lora;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        .text-profile p{
+            font-size: 17px;
+            margin-top:0;
+           margin: 15px;
+            font-family: andale mono;
+            font-weight: lighter;
+        }
+        .logo-language{
+            width: 30vw;
+            height: 10vh;
+            /* background-color: #a01e86; */
+            margin-top: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo-language img{
+            width: 47px;
+            height: 51px;
+            margin: 10px  ;
+        }
+
+
+
+/* sch ---------------------- */
+        .area-maps-sch{
+            width: 35vw;
+            /* height: 100vh;background-color: rgb(138, 222, 177); */
+            justify-content:left;
+            align-items: center;
+            display: flex;
+            
+        }
+        .box-map-sch{
+            width: 292px;
+            height: 596px;
+            background-color: #2B2B2A;
+            margin-top: 30px ;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* position: absolute; */
+           
+        }
+        .box-map-sch iframe{
+            width: 272px;
+            height: 576px;
+        }
+        .sch-legend{
+            width: 35px;
+            height: 140px;
+            background-color: #EC4635;
+            position: absolute;
+            right: 30.7%;
+            border-radius: 30px;
+            justify-content: center;
+            align-items: center;
+            display:grid;
+            text-align: center;
+            
+        }
+        .sch-legend p{
+            font-size: 20px;
+            font-family: andale mono;
+            color: #2B2B2A;
+            
+        }
+        /* ------------------page3------------------------------------------------------ */
+        .container-experient{
+            width: 100vw;
+            height: 100vh;
+            background-color: #7c3333;
+            justify-content: center;
+            text-align: center;
+        
+            
+        }
+        .heading-experient{
+            width: 100vw;
+            height: 20vh;
+            background-color: #e8aba4;
+            text-align: center;
+        }
+        .heading-experient h1{
+            font-size: 70px;
+            font-family: lora;
+            font-weight: lighter;
+            color: #2B2B2A;
+            
+            
+        }
+        .heading-experient p{
+            font-size: 20px;
+            font-family:lora;
+            letter-spacing: 1.6px;
+            font-weight: lighter;
+            color: #747474;
+            margin-top: 5px;
+        }
+        .area-box-experient{
+            width: 100vw;
+            height: 80vh;
+            background-color: rgb(183, 255, 171);
+            justify-content: center;
+            display: flex;
+            
+        }
+        .box-experient{
+            width: 894px;
+            height: 541px;
+            background-color: #2B2B2A;
+            justify-content: center;        
+        }
+
+        
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- opening saya -->
+
+    <div class="area-navbar">
+        <div class="area-brand-navbar">
+
+            
+            <!-- <div class="typing-animate">
+                <div class="dot" style="--delay:200ms; ">🎟</div>
+                <div class="dot" style="--delay:300ms;">🎟</div>
+                <div class="dot" style="--delay:400ms;">🎟</div>
+
+            </div> -->
+            
+            
+        </div>
+        <div class="area-item-navbar">
+            <ul>
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="aboutme" href="#">AboutMe</a></li>
+                <li><a class="skill" href="#">Skill</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="area-text">
+            <div>
+                <p class="persen-text" >99%</p>
+                <p style="font-size: 60px; margin-top: -40px;font-family: lora;">Process to</p>
+                <p class="programer-text">PROGRAMER</p>
+                <p class="jurusan-text">SOFWARE ENGINEER</p>
+                <!-- letter spacing -->
+            </div>
+        </div>
+        <div class="area-image">
+            <div class="img1-home">
+                <img src="imgsaya.png" width="526px" height="421px" draggable="false">
+            </div>
+            <div class="img2-home">
+                <div class="name-title">
+                    <p>Azka Baiq</p>
+                </div>
+                <div class="sosmed1">
+                    <span><i class="fab fa-linkedin" style="font-size: 45px; color: #B6CEB0; "></i></span>
+                </div>
+                <div class="sosmed1">
+                    <span><i class="fab fa-github" style="font-size: 45px; color: #B6CEB0; "></i></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="area-maps-home">
+            <div class="box-map-home">
+                <div class="Home-legend">
+                    <p>H</p>
+                    <p>O</p>
+                    <p>M</p>
+                    <p>E</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.902792335346!2d107.5875984273973!3d-6.848646199920924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6b39798ec85%3A0x6d95f78baf6201ac!2sSetiabudi%20Regency!5e0!3m2!1sid!2sid!4v1692949071038!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="area-profile">
+            <div class="img-profile">
+                <div class="border-pfp">
+                    <img src="prf.png">
+                </div>
+                
+            </div>
+            <div class="text-profile">
+                <h1>Who im?</h1>
+                <p>hi, my name is azka azkia baiquni,you can call me azka, im frome bandung, and my ambition is want to be a super expert programer, I want to study and work abroad... </p>
+                <div class="logo-language">
+                    <img src="image 34.png" style="--delay:100ms; ">
+                    <img src="image 39.png" style="--delay:200ms; ">
+                    <img src="image 40.png" style="--delay:300ms; ">
+                    <img src="Group 48.png"style="--delay:400ms; ">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="area-maps-sch">
+            <div class="box-map-sch">
+                <div class="sch-legend">
+                    <p>S</p>
+                    <p>C</p>
+                    <p>H</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9715071591204!2d107.03555531169347!3d-6.52528229344009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bc6e5be3d9bd%3A0x6b9881dabd801476!2sSMK%20IDN%20Boarding%20School!5e0!3m2!1sid!2sid!4v1691721774117!5m2!1sid!2sid" width="432" height="475" style="border:0;" allowfullscreen="" loading="lazy"            referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </div>
+    </div>
+    <div class="container-experient">
+        <div class="heading-experient">
+            <h1>Experience</h1>
+            <p>Move cursor to make a image better</p>
+        </div>
+        
+        <div class="area-box-experient">
+            <div class="box-experient">
+                
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
